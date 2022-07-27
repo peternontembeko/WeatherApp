@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.MainPage" BackgroundImageSource="weather.jpeg">
+
+    <StackLayout >
+        <Label Text=" Temperature" FontSize="20" HorizontalTextAlignment="Center" TextColor="White" Margin="15,10"/>
+        <Label Text="{Binding main.temp,StringFormat='{0:N0}°C'}" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        <Label Text=" Pressure" FontSize="20" HorizontalTextAlignment="Center" TextColor="White" />
+        <Label Text="{Binding main.pressure,StringFormat='{0:N0}°Pa'}" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        <Label Text=" Humidity" FontSize="20" HorizontalTextAlignment="Center" TextColor="White" />
+        <Label Text="{Binding main.humidity,StringFormat='{0:N0}%'}" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        <Label Text=" Clouds" FontSize="20" HorizontalTextAlignment="Center" TextColor="White" />
+        <Label Text="{Binding clouds.all}" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+        <Label Text=" Wind Speed" FontSize="20" HorizontalTextAlignment="Center" TextColor="White" />
+        <Label Text="{Binding wind.speed,StringFormat='{0:N0}km/hr'}" HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+
+    </StackLayout>
+
+        
+</ContentPage>
